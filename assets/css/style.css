@@ -71,6 +71,23 @@ html[xmlns] .clearfix {
     height: 1%;
 }
 
+
+/*
+	colors
+*/
+.blue {
+	background-color: #3883d8;
+}
+.turqoise {
+	background-color: #38ced7;
+}
+.bordeaux {
+	background-color: #953543;
+}
+.green {
+	background-color: #22d659;
+}
+
 #pinContainer {
     width: 100%;
     height: 100%;
@@ -86,4 +103,8 @@ html[xmlns] .clearfix {
     height: 100%;
     width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
     float: left;
+    display: flex;
+    justify-cotent: center;
+    align-items: center;
+    color: #fff;
 }
