@@ -104,7 +104,7 @@ html[xmlns] .clearfix {
     width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
     float: left;
     display: flex;
-    justify-cotent: center;
+    justify-content: center;
     align-items: center;
     color: #fff;
 }
