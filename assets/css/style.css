@@ -3,7 +3,6 @@
 */
 body {
 	font-family: "Source Sans Pro", Arial, sans-serif;
-	background-color: #c7e1ff;
 	font-size: 13px;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -75,18 +74,16 @@ html[xmlns] .clearfix {
 /*
 	colors
 */
-.blue {
-	background-color: #3883d8;
+.panel--about {
+	background-color: aliceblue;
 }
-.turqoise {
-	background-color: #38ced7;
+.panel2 {
+	background-color: aliceblue;
 }
-.bordeaux {
-	background-color: #953543;
+.panel--pf {
+	background-color: aliceblue;
 }
-.green {
-	background-color: #22d659;
-}
+/*
 
 #pinContainer {
     width: 100%;
@@ -96,15 +93,59 @@ html[xmlns] .clearfix {
             perspective: 1000;
 }
 #slideContainer {
-    width: 400%; /* to contain 4 panels, each with 100% of window width */
+    width: 400%;
     height: 100%;
 }
 .panel {
     height: 100%;
-    width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+    width: 25%;
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+}
+*/
+
+/* layout */
+body {
+    background: url(../image/body_bg.png) 0 0 repeat;
+}
+
+.menu {
+    height: 100vh;
+}
+
+.portfolio-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.portfolio-list li {
+    
+}
+.portfolio-list a {
+    display: block;
+    position: relative;
+}
+.portfolio-list span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .8);
+    opacity: 0;
+    transition: .2s;
+    text-align: center;
+}
+.portfolio-list a:hover span {
+    opacity: 1;
+}
+.portfolio-list img {
+/*    width: 200px;*/
+    max-width: 100%;
+    height: auto;
 }
