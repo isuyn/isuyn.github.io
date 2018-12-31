@@ -9,6 +9,13 @@ body {
 .body--about {
     background: url(../image/vintage-concrete.png);
 }
+.body--resume {
+    background: #fff;
+    
+}
+.body--resume img {
+    max-width: 100%;
+}
 body, html {
 	height: 100%
 }
