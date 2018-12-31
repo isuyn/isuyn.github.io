@@ -4,10 +4,13 @@
 body {
 	font-size: 16px;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
-    background: url(../image/body_bg.png) 0 0 repeat;
+/*    background: url(../image/body_bg.png) 0 0 repeat;*/
+    background: url(../image/main.jpg) 50% 50% no-repeat;
+    background-size: cover;
 }
 .body--about {
     background: url(../image/vintage-concrete.png);
+    font-family: 'NanumSquare', sans-serif;
 }
 .body--resume {
     background: #fff;
@@ -105,7 +108,7 @@ html[xmlns] .clearfix {
 .nav {
     position: relative;
     height: 100vh;
-    color: rgba(255 249 184);
+    color: rgba(255 247 148);
     font-family: 'Playfair Display', serif;
     font-style: normal;
     text-align: center;
@@ -113,7 +116,17 @@ html[xmlns] .clearfix {
 .nav h1 {
     position: absolute;
     top: 40px;
-    left: 50%;
+    left: 3%;
+    width: 120px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+/*    text-decoration: underline;*/
+}
+.nav h1 span {
+    display: inline-block;
+    border-bottom: 1px solid;
 }
 .nav-list {
     display: -webkit-flex;
@@ -124,8 +137,10 @@ html[xmlns] .clearfix {
     list-style: none;
     height: 100%;
     margin: 0;
+    padding: 0;
     align-items: center;
     font-weight: 600;
+    
 }
 .nav-list li {
     -webkit-flex: 1;
@@ -133,12 +148,23 @@ html[xmlns] .clearfix {
     -ms-flex: 1;
     -o-flex: 1;
     flex: 1;
+    height: 220px;
+    border-left: 1px solid;
+}
+.nav-list li:first-child {
+    border-left: 0;
 }
 .nav-list a {
-    font-size: 60px;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
     font-size: 5.5vw;
     color: rgba(255 249 184);
+    text-align: center;
 }
+
+
+/*포트폴리오 페이지*/
 
 .portfolio-list {
     list-style: none;
@@ -277,5 +303,10 @@ html[xmlns] .clearfix {
     padding: 5em;
     border-top: 1px solid #ccc;   
     border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/* 비디오 페이지 */
+.vide h1 {
     text-align: center;
 }
