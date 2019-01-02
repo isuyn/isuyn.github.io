@@ -3,8 +3,9 @@
 .list-link {
     position: fixed;
     top: 20px;
-    right: 30px;
+    right: 20px;
     overflow: hidden;
+    width: 40px;
 /*
     width: 100px;
     height: 50px;
@@ -49,5 +50,31 @@ img {
 /* 자간, 행간 */
     letter-spacing: .05em;
     line-height: 2;
-    color: #888;
+    color: #888;cc
+}
+.resizer {
+    width: 100%;
+    height: 100vh;
+}
+
+.tablet, 
+.desktop {
+    display: none;
+}
+@media (min-width: 45em) {
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+}
+
+@media (min-width: 60em) {
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
 }
