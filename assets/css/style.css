@@ -162,7 +162,9 @@ html[xmlns] .clearfix {
     color: rgba(255 249 184);
     text-align: center;
 }
-
+.nav--ab {
+    margin-bottom: 66px;
+}
 
 /*포트폴리오 페이지*/
 
@@ -228,12 +230,12 @@ html[xmlns] .clearfix {
     margin: 0 2%;
 }
 .pf-item h3 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0;
 }
 .pf-item p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 100;
     margin: 5px 0 0;
 }
@@ -266,7 +268,15 @@ html[xmlns] .clearfix {
 .pf--icon .cont { 
     margin-top: 40px;
 }
-
+.pf--illust {
+    max-width: 40%;
+}
+.pf--logo {
+    max-width:10%;
+}
+.pf--poster {
+    max-width: 30%;
+}
 /* 자전거 이미지 크롭 */
 /*
 .pf--web2 .img-wrap {
