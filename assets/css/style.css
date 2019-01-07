@@ -97,11 +97,29 @@ html[xmlns] .clearfix {
     visibility: hidden;
 }
 .home {
+/* 여기 해결해야함!!!!!!!!!!!!!!!!!!!!!! */
     position: fixed;
-    top: 10px;
-    right: 20px;
-    padding: 10px;
+    top: 100px;
+    right: 1px;
+    padding: 5px 17px 5px 5px;
     text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+.home:visited {
+    color: rgba(100,100,100,100);
+}
+.home > span {
+    position: relative;
+}
+.home::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: -1px;
+    bottom: 0;
+    height: 15px;
+    background-color: rgba(100,100,100,.4);
 }
 
 /* layout */
@@ -174,7 +192,7 @@ html[xmlns] .clearfix {
     padding: 0;
     width: 80%;
     margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'NanumSquare', sans-serif;
 }
 .portfolio-list a {
     overflow: hidden;
@@ -255,11 +273,16 @@ html[xmlns] .clearfix {
     margin-right: 15%;
 }
 .pf--video1 {
-    flex: 2;
+    flex: 1;
 }
 .pf--video2 {
     flex: 5;
-    margin-left: 80px;
+}
+.pf--video3 {
+    flex: 3;
+}
+.pf--video4 {
+    flex: 2;
 }
 .pf--icon {
     margin-left: 30%;
@@ -315,6 +338,10 @@ html[xmlns] .clearfix {
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
+.about--picture {
+    width: 100%;
+}
+
 
 /* 비디오 페이지 */
 .vide h1 {

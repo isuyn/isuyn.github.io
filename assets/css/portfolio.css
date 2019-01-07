@@ -1,25 +1,60 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-.list-link {
+body {
+    font-family: 'Raleway', 'NanumSquare', sans-serif;
+}
+/*
+input, textarea, button, select {
+    font-family: 'Raleway', 'NanumSquare', sans-serif;
+}
+*/
+
+.pf-list-btn {
+    position: fixed;
+    top: 100px;
+    right: 1px;
+    padding: 5px 17px 5px 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+.pf-list-btn:visited {
+    color: rgba(180,180,180,100);
+}
+.pf-list-btn:hover {
+    text-decoration: underline;
+}
+.pf-list-btn > span {
+    position: relative;
+}
+.pf-list-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: -1px;
+    bottom: 0;
+    height: 15px;
+    background-color: rgba(200,200,200,.4);
+}
+
+/*
+{
     position: fixed;
     top: 20px;
     right: 20px;
     overflow: hidden;
+    z-index: 1000;
     width: 40px;
-/*
-    width: 100px;
-    height: 50px;
-*/
     color: #fff;
     text-shadow: 0 0 10px rgba(0,0,0,.5);
     font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-/*    background: url(../image/body_bg.png) no-repeat;*/
-/*    text-indent: 100%;*/
-}
+ }
+*/
+
+
+
+
 img {
     max-width: 100%;
 }
@@ -28,6 +63,7 @@ img {
     max-width: 100%;
     width: 800px;
     margin: 0 auto;
+    padding-top: 40px;
 }
 .video-wrap {
     overflow: hidden;
@@ -56,11 +92,127 @@ img {
     width: 100%;
     height: 100vh;
 }
+.video-p {
+    text-align: left;
+}
 
 .tablet, 
 .desktop {
     display: none;
 }
+
+/* 포스터 상세페이지 */
+.poster--1 {
+    width: 400px;
+    margin-left: 15%;
+    padding: 40px;
+}
+.poster--2 {
+    width: 400px;
+    margin-left: 50%;
+}
+.poster-row {
+    display: block;
+}
+.cont {
+    font-size: 16px;
+    color: #888;
+}
+
+/* 앨범아트 상세페이지 */
+.album-art {
+    position: relative;
+}
+.album-art .list {}
+.album-art .album-play {
+    position: absolute;
+    left: 18.8%;
+    top: 61.7%;
+    width: 11%;
+    padding: 10.1%;
+}
+.album-art .album-play img {}
+
+/* web2 반응형 웹 resizer */
+.resizer {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+.resizer .device {
+    position: absolute;
+    bottom: 100px;
+    border-color: #777;
+    border-style: solid;
+    transform: scale(.6);
+}
+.resizer .device.size-desktop {
+    align-items: center;
+    width: 1920px;
+    height: 1080px;
+    border-width: 16px 24px;
+    border-radius: 12px;
+    transform-origin: 0 bottom;
+}
+.resizer .device.size-desktop::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: -100px;
+    right: -100px;
+    height: 30px;
+    background: #777;
+}
+.resizer .device.size-tablet {
+    left: 610px;
+    width: 768px;
+    height: 1024px;
+    border-width: 20px 10px;
+    border-radius: 12px;
+    transform-origin: center bottom;
+}
+.resizer .device.size-mobile {
+    left: 920px;
+    width: 360px;
+    height: 720px;
+    border-width: 25px 10px;
+    border-radius: 12px;
+    transform-origin: right bottom;
+}
+.resizer .frame-wrap {
+    width: 100%;
+    height: 100%;
+}
+.resizer .frame-wrap iframe {
+    width: 100%;
+    height: 100%;
+}
+.go-web2 {
+    color: #8888;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 100px;
+    text-decoration: none;
+}
+.go-web2:hover {
+    text-decoration: line-through;
+}
+.text-cont {
+    color: #999;
+}
+.resizer-text {
+    text-align: center;
+}
+.mobile {
+    width: 100%;
+}
+.tablet {
+    width: 100%;
+}
+.desktop {
+    width: 100%;
+}
+
 @media (min-width: 45em) {
     .mobile {
         display: none;
