@@ -199,11 +199,30 @@ img {
     text-align: center;
     display: block;
     overflow: hidden;
-    max-width: 1200px;
-/*    height: 100vh;*/
-    padding: 100px 0 100px;
+    max-width: 1000px;
+    height: 100vh;
+    padding-top: 100px;
 }
-
+.swiper-container3 .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-slide img {
+    max-height: 100vh;
+}
+.swiper-container3 + .cont {
+    text-align: center;
+    padding: 20px 0 200px;
+    text-align: center;
+}
+.poster15-img {
+    border: 1px solid rgba(230, 230, 230,.5);
+    width: 800px;
+}
+.poster17-img, .poster18-img, .poster20-img{
+    width: 700px;
+}
 
 /* 일러스트 상세페이지 */
 .illust--1 {
