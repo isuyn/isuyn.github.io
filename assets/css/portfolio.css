@@ -175,43 +175,9 @@ img {
     margin-left: 15%;
     padding: 40px;
 }
-.poster--14 {
-    width: 200px;
-    margin-left: 55%;
-}
-.poster--15 {
-    width: 800px;
-    margin-left: 15%;
-    padding: 40px;
-}
-.poster15-img {
-    border: 1px solid rgba(230, 230, 230,.5);
-}
-.poster--16 {
-    width: 200px;
-    margin-left: 50%;
-}
-.poster--17 {
-    width: 600px;
-    margin-left: 15%;
-    padding: 40px;
-}
-.poster--18 {
-    width: 400px;
-    margin-left: 50%;
-}
-.poster--19 {
-    width: 200px;
-    margin-left: 25%;
-    padding: 40px;
-}
-.poster--20 {
-    width: 400px;
-    margin-left: 50%;
-}
 .poster--21 {
     width: 400px;
-    margin-left: 15%;
+    margin-left: 50%;
     padding: 40px;
 }
 .poster21-img {
@@ -220,10 +186,24 @@ img {
 .poster-row {
     display: block;
 }
+.poster-item {
+    padding: 100px 0 100px;
+}
 .cont {
     font-size: 16px;
     color: #888;
 }
+.swiper-container3 {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    max-width: 1200px;
+/*    height: 100vh;*/
+    padding: 100px 0 100px;
+}
+
 
 /* 일러스트 상세페이지 */
 .illust--1 {
@@ -240,17 +220,18 @@ img {
     margin-left: 15%;
 }
 .illust--4 {
-    width: 600px;
-    margin-left: 50%;
+    width: 700px;
+    margin-left: 40%;
 }
 .illust--5 {
     width: 400px;
     margin-left: 15%;
 }
 .illust--6 {
-    width: 600px;
-    margin-left: 60%;
+    width: 1200px;
+    margin-left: 5%;
 }
+/*
 .illust--7 {
     width: 400px;
     margin-left: 15%;
@@ -279,16 +260,17 @@ img {
     width: 400px;
     margin-left: 15%;
 }
+*/
 .illust--14 {
-    width: 900px;
-    margin-left: 40%;
+    width: 600px;
+    margin-left: 50%;
 }
 .illust--15 {
-    width: 800px;
+    width: 700px;
     margin-left: 15%;
 }
 .illust--16 {
-    width: 600px;
+    width: 500px;
     margin-left: 50%;
 }
 .illust--22 {
@@ -300,7 +282,7 @@ img {
     display: block;
 }
 .illust-item {
-    padding: 50px 0px 50px;
+    padding: 100px 0px 100px;
 }
 .cont {
     font-size: 16px;
@@ -313,6 +295,7 @@ img {
     display: block;
     text-align: center;
     overflow: hidden;
+    padding: 100px 0 100px;
 /*  height: 100vh;*/
 }
         
