@@ -292,11 +292,9 @@ img {
     margin-left: 50%;
 }
 .illust--22 {
-    width: 100%;
-/*
+    margin: 0 auto;
+    display: block;
     max-width: 600px;
-    text-align: center;
-*/
 }
 .illust-row {
     display: block;
@@ -309,19 +307,15 @@ img {
     color: #888;
 }
 .swiper-container2 {
-    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: block;
     text-align: center;
+    overflow: hidden;
 /*  height: 100vh;*/
 }
         
-.swiper-button-prev2 {
-    background-image: url(../image/slider_left.png);
-}
-.swiper-button-next2 {
-    background-image: url(../image/slider_right.png);
-}
-
-
 /* 앨범아트 상세페이지 */
 .album-art {
     position: relative;
