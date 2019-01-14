@@ -450,6 +450,17 @@ img {
       background-image: url(../image/slider_right.png);
     }
 
+/* web4 */
+.web4-container {
+    max-width: 100%;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 200px;
+    text-align: center;
+    color: #999;
+}
+
+
 /* 비디오 페이지 */
 .vide h1 {
     text-align: center;
