@@ -341,4 +341,26 @@ html[xmlns] .clearfix {
 .about--picture {
     width: 100%;
 }
+.letter-img {
+    opacity: 0.5;
+    width: 200px;
+}
+.letter-all {
+    padding: 100px;
+    text-align: center;
+}
 
+/* 편지 */
+.letter-container {
+    background: url(../image/vintage-concrete.png);
+}
+.letter-cont {
+    width: 80%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 200px;
+/*    letter-spacing: .05em;*/
+    line-height: 2;
+    color: #555;
+    font-family: 'NanumSquare', sans-serif;
+}
